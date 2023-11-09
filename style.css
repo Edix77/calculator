@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+
+.calculator{
+    background-color: gray;
+    color: white;
+    width: 300px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1.5rem;
+    
+}
+
+.display {
+    background-color: rgb(66, 51, 73);
+    color: white;
+    grid-column: 1 / -1; 
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius:  .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+.btn{
+    background-color: rgb(66, 51, 73);
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  .5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(215, 165, 240);
+        color: black;
+    }
+}
+
+#zero{
+    grid-column: 2 span;
+}
+
+#equal{
+    grid-row: 2 span;
+    background-color: red;
+    &:hover{
+        background-color: brown;
+    }
+}
+
+
+
+
+
+/* #appCalc{
+    height: 420px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+#appCalc form{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+#appCalc input[type=textfield]{
+    height: 25%;
+    width: 100%;
+    cursor:default;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    text-align: right;
+    font-size: 50px;
+    border: 0;
+    outline: none;
+}
+
+#appCalc input[type=button], input[type=reset]{
+    width: 22%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    font-size: 26px;
+    padding: 18px;
+    margin:3px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#appCalc .orange{
+    background-color: orange;
+    color: white !important;
+}
+
+#appCalc .gray{
+    background-color: gray;
+    color: white !important;
+}
+
+
+
+ */
